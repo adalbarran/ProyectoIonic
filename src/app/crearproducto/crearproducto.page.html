@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Crear Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">crearproducto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  
+  <ion-button  color = "success" routerLink = "/catalogo">
+    <ion-icon name="arrow-back-outline"></ion-icon>  Volver</ion-button> 
+
+
+
+  <ion-list style="margin-top: 100px; margin-bottom: 100px;">
+    <ion-item>
+      <ion-input label="Producto" placeholder="Ingrese nombre del producto"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Precio" placeholder="Ingrese precio del producto"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Descripcion" placeholder="Ingrese la descripcion del producto"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input label="Imagen" placeholder="Ingrese la url de la imagen"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+  
+  <ion-button>
+    <ion-icon name="add-outline"></ion-icon>  Crear Producto</ion-button> 
+
+
+</ion-content>
+
+
