@@ -20,27 +20,34 @@
 
 
   <ion-list style="margin-top: 100px; margin-bottom: 100px;">
+
+
+    <form [formGroup] = 'formularioCrearProducto'>
+
     <ion-item>
-      <ion-input label="Producto" placeholder="Ingrese nombre del producto"></ion-input>
+      <ion-input formControlName="nombre" label="Producto" placeholder="Ingrese nombre del producto"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-input label="Precio" placeholder="Ingrese precio del producto"></ion-input>
+      <ion-input formControlName="precio" label="Precio" placeholder="Ingrese precio del producto"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-input label="Descripcion" placeholder="Ingrese la descripcion del producto"></ion-input>
+      <ion-input formControlName="desc" label="Descripcion" placeholder="Ingrese la descripcion del producto"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-input label="Imagen" placeholder="Ingrese la url de la imagen"></ion-input>
     </ion-item>
 
+    </form>
 
   </ion-list>
   
-  <ion-button>
-    <ion-icon name="add-outline"></ion-icon>  Crear Producto</ion-button> 
+  <ion-button (click)="grabarProducto()">
+      <ion-icon name="add-outline"></ion-icon>  Crear Producto
+  </ion-button> 
+    
 
 
 </ion-content>
